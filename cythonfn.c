@@ -10,12 +10,12 @@
             ]
         ],
         "depends": [],
-        "name": "main",
+        "name": "cythonfn",
         "sources": [
-            "main.pyx"
+            "cythonfn.pyx"
         ]
     },
-    "module_name": "main"
+    "module_name": "cythonfn"
 }
 END: Cython Metadata */
 
@@ -1235,8 +1235,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE__main
-#define __PYX_HAVE_API__main
+#define __PYX_HAVE__cythonfn
+#define __PYX_HAVE_API__cythonfn
 /* Early includes */
 #include <string.h>
 #include <stdio.h>
@@ -1518,7 +1518,7 @@ static const char *__pyx_filename;
 /* #### Code section: filename_table ### */
 
 static const char *__pyx_f[] = {
-  "main.pyx",
+  "cythonfn.pyx",
   "__init__.cython-30.pxd",
   "type.pxd",
 };
@@ -2592,15 +2592,15 @@ static CYTHON_INLINE char *__pyx_f_5numpy_7ndarray_4data_data(PyArrayObject *__p
 
 /* Module declarations from "numpy" */
 
-/* Module declarations from "main" */
+/* Module declarations from "cythonfn" */
 /* #### Code section: typeinfo ### */
 static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_5numpy_float64_t = { "float64_t", NULL, sizeof(__pyx_t_5numpy_float64_t), { 0 }, 0, 'R', 0, 0 };
 /* #### Code section: before_global_var ### */
-#define __Pyx_MODULE_NAME "main"
-extern int __pyx_module_is_main_main;
-int __pyx_module_is_main_main = 0;
+#define __Pyx_MODULE_NAME "cythonfn"
+extern int __pyx_module_is_main_cythonfn;
+int __pyx_module_is_main_cythonfn = 0;
 
-/* Implementation of "main" */
+/* Implementation of "cythonfn" */
 /* #### Code section: global_var ### */
 static PyObject *__pyx_builtin_range;
 static PyObject *__pyx_builtin_ImportError;
@@ -2623,9 +2623,9 @@ static const char __pyx_k_test[] = "__test__";
 static const char __pyx_k_numpy[] = "numpy";
 static const char __pyx_k_range[] = "range";
 static const char __pyx_k_import[] = "__import__";
-static const char __pyx_k_main_2[] = "main";
-static const char __pyx_k_main_pyx[] = "main.pyx";
+static const char __pyx_k_cythonfn[] = "cythonfn";
 static const char __pyx_k_ImportError[] = "ImportError";
+static const char __pyx_k_cythonfn_pyx[] = "cythonfn.pyx";
 static const char __pyx_k_gauss_seidel[] = "gauss_seidel";
 static const char __pyx_k_initializing[] = "_initializing";
 static const char __pyx_k_is_coroutine[] = "_is_coroutine";
@@ -2635,7 +2635,7 @@ static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";
 static const char __pyx_k_numpy__core_multiarray_failed_to[] = "numpy._core.multiarray failed to import";
 static const char __pyx_k_numpy__core_umath_failed_to_impo[] = "numpy._core.umath failed to import";
 /* #### Code section: decls ### */
-static PyObject *__pyx_pf_4main_gauss_seidel(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_f, int __pyx_v_num_iterations); /* proto */
+static PyObject *__pyx_pf_8cythonfn_gauss_seidel(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_f, int __pyx_v_num_iterations); /* proto */
 /* #### Code section: late_includes ### */
 /* #### Code section: module_state ### */
 typedef struct {
@@ -2705,6 +2705,8 @@ typedef struct {
   PyObject *__pyx_n_s_asyncio_coroutines;
   PyObject *__pyx_n_s_cline_in_traceback;
   PyObject *__pyx_n_s_copy;
+  PyObject *__pyx_n_s_cythonfn;
+  PyObject *__pyx_kp_s_cythonfn_pyx;
   PyObject *__pyx_n_s_f;
   PyObject *__pyx_n_s_gauss_seidel;
   PyObject *__pyx_n_s_i;
@@ -2715,8 +2717,6 @@ typedef struct {
   PyObject *__pyx_n_s_k;
   PyObject *__pyx_n_s_m;
   PyObject *__pyx_n_s_main;
-  PyObject *__pyx_n_s_main_2;
-  PyObject *__pyx_kp_s_main_pyx;
   PyObject *__pyx_n_s_n;
   PyObject *__pyx_n_s_name;
   PyObject *__pyx_n_s_newf;
@@ -2796,6 +2796,8 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_n_s_asyncio_coroutines);
   Py_CLEAR(clear_module_state->__pyx_n_s_cline_in_traceback);
   Py_CLEAR(clear_module_state->__pyx_n_s_copy);
+  Py_CLEAR(clear_module_state->__pyx_n_s_cythonfn);
+  Py_CLEAR(clear_module_state->__pyx_kp_s_cythonfn_pyx);
   Py_CLEAR(clear_module_state->__pyx_n_s_f);
   Py_CLEAR(clear_module_state->__pyx_n_s_gauss_seidel);
   Py_CLEAR(clear_module_state->__pyx_n_s_i);
@@ -2806,8 +2808,6 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_n_s_k);
   Py_CLEAR(clear_module_state->__pyx_n_s_m);
   Py_CLEAR(clear_module_state->__pyx_n_s_main);
-  Py_CLEAR(clear_module_state->__pyx_n_s_main_2);
-  Py_CLEAR(clear_module_state->__pyx_kp_s_main_pyx);
   Py_CLEAR(clear_module_state->__pyx_n_s_n);
   Py_CLEAR(clear_module_state->__pyx_n_s_name);
   Py_CLEAR(clear_module_state->__pyx_n_s_newf);
@@ -2865,6 +2865,8 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_n_s_asyncio_coroutines);
   Py_VISIT(traverse_module_state->__pyx_n_s_cline_in_traceback);
   Py_VISIT(traverse_module_state->__pyx_n_s_copy);
+  Py_VISIT(traverse_module_state->__pyx_n_s_cythonfn);
+  Py_VISIT(traverse_module_state->__pyx_kp_s_cythonfn_pyx);
   Py_VISIT(traverse_module_state->__pyx_n_s_f);
   Py_VISIT(traverse_module_state->__pyx_n_s_gauss_seidel);
   Py_VISIT(traverse_module_state->__pyx_n_s_i);
@@ -2875,8 +2877,6 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_n_s_k);
   Py_VISIT(traverse_module_state->__pyx_n_s_m);
   Py_VISIT(traverse_module_state->__pyx_n_s_main);
-  Py_VISIT(traverse_module_state->__pyx_n_s_main_2);
-  Py_VISIT(traverse_module_state->__pyx_kp_s_main_pyx);
   Py_VISIT(traverse_module_state->__pyx_n_s_n);
   Py_VISIT(traverse_module_state->__pyx_n_s_name);
   Py_VISIT(traverse_module_state->__pyx_n_s_newf);
@@ -2962,6 +2962,8 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_n_s_asyncio_coroutines __pyx_mstate_global->__pyx_n_s_asyncio_coroutines
 #define __pyx_n_s_cline_in_traceback __pyx_mstate_global->__pyx_n_s_cline_in_traceback
 #define __pyx_n_s_copy __pyx_mstate_global->__pyx_n_s_copy
+#define __pyx_n_s_cythonfn __pyx_mstate_global->__pyx_n_s_cythonfn
+#define __pyx_kp_s_cythonfn_pyx __pyx_mstate_global->__pyx_kp_s_cythonfn_pyx
 #define __pyx_n_s_f __pyx_mstate_global->__pyx_n_s_f
 #define __pyx_n_s_gauss_seidel __pyx_mstate_global->__pyx_n_s_gauss_seidel
 #define __pyx_n_s_i __pyx_mstate_global->__pyx_n_s_i
@@ -2972,8 +2974,6 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_n_s_k __pyx_mstate_global->__pyx_n_s_k
 #define __pyx_n_s_m __pyx_mstate_global->__pyx_n_s_m
 #define __pyx_n_s_main __pyx_mstate_global->__pyx_n_s_main
-#define __pyx_n_s_main_2 __pyx_mstate_global->__pyx_n_s_main_2
-#define __pyx_kp_s_main_pyx __pyx_mstate_global->__pyx_kp_s_main_pyx
 #define __pyx_n_s_n __pyx_mstate_global->__pyx_n_s_n
 #define __pyx_n_s_name __pyx_mstate_global->__pyx_n_s_name
 #define __pyx_n_s_newf __pyx_mstate_global->__pyx_n_s_newf
@@ -4681,7 +4681,7 @@ static CYTHON_INLINE NPY_DATETIMEUNIT __pyx_f_5numpy_get_datetime64_unit(PyObjec
   return __pyx_r;
 }
 
-/* "main.pyx":7
+/* "cythonfn.pyx":7
  * cimport numpy as np
  * 
  * def gauss_seidel(np.ndarray[np.float64_t, ndim=2] f, int num_iterations=1000):             # <<<<<<<<<<<<<<
@@ -4690,16 +4690,16 @@ static CYTHON_INLINE NPY_DATETIMEUNIT __pyx_f_5numpy_get_datetime64_unit(PyObjec
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_4main_1gauss_seidel(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_8cythonfn_1gauss_seidel(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-PyDoc_STRVAR(__pyx_doc_4main_gauss_seidel, "\n    Perform Gauss-Seidel iterations to solve the 2D Poisson equation.\n    ");
-static PyMethodDef __pyx_mdef_4main_1gauss_seidel = {"gauss_seidel", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_4main_1gauss_seidel, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_4main_gauss_seidel};
-static PyObject *__pyx_pw_4main_1gauss_seidel(PyObject *__pyx_self, 
+PyDoc_STRVAR(__pyx_doc_8cythonfn_gauss_seidel, "\n    Perform Gauss-Seidel iterations to solve the 2D Poisson equation.\n    ");
+static PyMethodDef __pyx_mdef_8cythonfn_1gauss_seidel = {"gauss_seidel", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8cythonfn_1gauss_seidel, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_8cythonfn_gauss_seidel};
+static PyObject *__pyx_pw_8cythonfn_1gauss_seidel(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -4788,12 +4788,12 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
     }
   }
-  __Pyx_AddTraceback("main.gauss_seidel", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cythonfn.gauss_seidel", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_f), __pyx_ptype_5numpy_ndarray, 1, "f", 0))) __PYX_ERR(0, 7, __pyx_L1_error)
-  __pyx_r = __pyx_pf_4main_gauss_seidel(__pyx_self, __pyx_v_f, __pyx_v_num_iterations);
+  __pyx_r = __pyx_pf_8cythonfn_gauss_seidel(__pyx_self, __pyx_v_f, __pyx_v_num_iterations);
 
   /* function exit code */
   goto __pyx_L0;
@@ -4810,7 +4810,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4main_gauss_seidel(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_f, int __pyx_v_num_iterations) {
+static PyObject *__pyx_pf_8cythonfn_gauss_seidel(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_f, int __pyx_v_num_iterations) {
   int __pyx_v_n;
   int __pyx_v_m;
   int __pyx_v_i;
@@ -4866,7 +4866,7 @@ static PyObject *__pyx_pf_4main_gauss_seidel(CYTHON_UNUSED PyObject *__pyx_self,
   }
   __pyx_pybuffernd_f.diminfo[0].strides = __pyx_pybuffernd_f.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_f.diminfo[0].shape = __pyx_pybuffernd_f.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_f.diminfo[1].strides = __pyx_pybuffernd_f.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_f.diminfo[1].shape = __pyx_pybuffernd_f.rcbuffer->pybuffer.shape[1];
 
-  /* "main.pyx":11
+  /* "cythonfn.pyx":11
  *     Perform Gauss-Seidel iterations to solve the 2D Poisson equation.
  *     """
  *     cdef int n = f.shape[0]             # <<<<<<<<<<<<<<
@@ -4875,7 +4875,7 @@ static PyObject *__pyx_pf_4main_gauss_seidel(CYTHON_UNUSED PyObject *__pyx_self,
  */
   __pyx_v_n = (__pyx_f_5numpy_7ndarray_5shape_shape(((PyArrayObject *)__pyx_v_f))[0]);
 
-  /* "main.pyx":12
+  /* "cythonfn.pyx":12
  *     """
  *     cdef int n = f.shape[0]
  *     cdef int m = f.shape[1]             # <<<<<<<<<<<<<<
@@ -4884,7 +4884,7 @@ static PyObject *__pyx_pf_4main_gauss_seidel(CYTHON_UNUSED PyObject *__pyx_self,
  */
   __pyx_v_m = (__pyx_f_5numpy_7ndarray_5shape_shape(((PyArrayObject *)__pyx_v_f))[1]);
 
-  /* "main.pyx":14
+  /* "cythonfn.pyx":14
  *     cdef int m = f.shape[1]
  *     cdef int i, j, k
  *     cdef np.ndarray[np.float64_t, ndim=2] newf = f.copy()             # <<<<<<<<<<<<<<
@@ -4929,7 +4929,7 @@ static PyObject *__pyx_pf_4main_gauss_seidel(CYTHON_UNUSED PyObject *__pyx_self,
   __pyx_v_newf = ((PyArrayObject *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "main.pyx":16
+  /* "cythonfn.pyx":16
  *     cdef np.ndarray[np.float64_t, ndim=2] newf = f.copy()
  * 
  *     for k in range(num_iterations):             # <<<<<<<<<<<<<<
@@ -4941,7 +4941,7 @@ static PyObject *__pyx_pf_4main_gauss_seidel(CYTHON_UNUSED PyObject *__pyx_self,
   for (__pyx_t_8 = 0; __pyx_t_8 < __pyx_t_7; __pyx_t_8+=1) {
     __pyx_v_k = __pyx_t_8;
 
-    /* "main.pyx":17
+    /* "cythonfn.pyx":17
  * 
  *     for k in range(num_iterations):
  *         for i in range(1, n-1):             # <<<<<<<<<<<<<<
@@ -4953,7 +4953,7 @@ static PyObject *__pyx_pf_4main_gauss_seidel(CYTHON_UNUSED PyObject *__pyx_self,
     for (__pyx_t_11 = 1; __pyx_t_11 < __pyx_t_10; __pyx_t_11+=1) {
       __pyx_v_i = __pyx_t_11;
 
-      /* "main.pyx":18
+      /* "cythonfn.pyx":18
  *     for k in range(num_iterations):
  *         for i in range(1, n-1):
  *             for j in range(1, m-1):             # <<<<<<<<<<<<<<
@@ -4965,7 +4965,7 @@ static PyObject *__pyx_pf_4main_gauss_seidel(CYTHON_UNUSED PyObject *__pyx_self,
       for (__pyx_t_14 = 1; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
         __pyx_v_j = __pyx_t_14;
 
-        /* "main.pyx":19
+        /* "cythonfn.pyx":19
  *         for i in range(1, n-1):
  *             for j in range(1, m-1):
  *                 newf[i, j] = 0.25 * (newf[i, j+1] + newf[i, j-1] +             # <<<<<<<<<<<<<<
@@ -5003,7 +5003,7 @@ static PyObject *__pyx_pf_4main_gauss_seidel(CYTHON_UNUSED PyObject *__pyx_self,
           __PYX_ERR(0, 19, __pyx_L1_error)
         }
 
-        /* "main.pyx":20
+        /* "cythonfn.pyx":20
  *             for j in range(1, m-1):
  *                 newf[i, j] = 0.25 * (newf[i, j+1] + newf[i, j-1] +
  *                                      newf[i+1, j] + newf[i-1, j])             # <<<<<<<<<<<<<<
@@ -5026,7 +5026,7 @@ static PyObject *__pyx_pf_4main_gauss_seidel(CYTHON_UNUSED PyObject *__pyx_self,
           __PYX_ERR(0, 20, __pyx_L1_error)
         }
 
-        /* "main.pyx":19
+        /* "cythonfn.pyx":19
  *         for i in range(1, n-1):
  *             for j in range(1, m-1):
  *                 newf[i, j] = 0.25 * (newf[i, j+1] + newf[i, j-1] +             # <<<<<<<<<<<<<<
@@ -5049,7 +5049,7 @@ static PyObject *__pyx_pf_4main_gauss_seidel(CYTHON_UNUSED PyObject *__pyx_self,
           __PYX_ERR(0, 20, __pyx_L1_error)
         }
 
-        /* "main.pyx":20
+        /* "cythonfn.pyx":20
  *             for j in range(1, m-1):
  *                 newf[i, j] = 0.25 * (newf[i, j+1] + newf[i, j-1] +
  *                                      newf[i+1, j] + newf[i-1, j])             # <<<<<<<<<<<<<<
@@ -5076,7 +5076,7 @@ static PyObject *__pyx_pf_4main_gauss_seidel(CYTHON_UNUSED PyObject *__pyx_self,
     }
   }
 
-  /* "main.pyx":22
+  /* "cythonfn.pyx":22
  *                                      newf[i+1, j] + newf[i-1, j])
  * 
  *     return newf  # Ensure function ends cleanly             # <<<<<<<<<<<<<<
@@ -5086,7 +5086,7 @@ static PyObject *__pyx_pf_4main_gauss_seidel(CYTHON_UNUSED PyObject *__pyx_self,
   __pyx_r = ((PyObject *)__pyx_v_newf);
   goto __pyx_L0;
 
-  /* "main.pyx":7
+  /* "cythonfn.pyx":7
  * cimport numpy as np
  * 
  * def gauss_seidel(np.ndarray[np.float64_t, ndim=2] f, int num_iterations=1000):             # <<<<<<<<<<<<<<
@@ -5106,7 +5106,7 @@ static PyObject *__pyx_pf_4main_gauss_seidel(CYTHON_UNUSED PyObject *__pyx_self,
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_f.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_newf.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("main.gauss_seidel", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cythonfn.gauss_seidel", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -5141,6 +5141,8 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_n_s_asyncio_coroutines, __pyx_k_asyncio_coroutines, sizeof(__pyx_k_asyncio_coroutines), 0, 0, 1, 1},
     {&__pyx_n_s_cline_in_traceback, __pyx_k_cline_in_traceback, sizeof(__pyx_k_cline_in_traceback), 0, 0, 1, 1},
     {&__pyx_n_s_copy, __pyx_k_copy, sizeof(__pyx_k_copy), 0, 0, 1, 1},
+    {&__pyx_n_s_cythonfn, __pyx_k_cythonfn, sizeof(__pyx_k_cythonfn), 0, 0, 1, 1},
+    {&__pyx_kp_s_cythonfn_pyx, __pyx_k_cythonfn_pyx, sizeof(__pyx_k_cythonfn_pyx), 0, 0, 1, 0},
     {&__pyx_n_s_f, __pyx_k_f, sizeof(__pyx_k_f), 0, 0, 1, 1},
     {&__pyx_n_s_gauss_seidel, __pyx_k_gauss_seidel, sizeof(__pyx_k_gauss_seidel), 0, 0, 1, 1},
     {&__pyx_n_s_i, __pyx_k_i, sizeof(__pyx_k_i), 0, 0, 1, 1},
@@ -5151,8 +5153,6 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_n_s_k, __pyx_k_k, sizeof(__pyx_k_k), 0, 0, 1, 1},
     {&__pyx_n_s_m, __pyx_k_m, sizeof(__pyx_k_m), 0, 0, 1, 1},
     {&__pyx_n_s_main, __pyx_k_main, sizeof(__pyx_k_main), 0, 0, 1, 1},
-    {&__pyx_n_s_main_2, __pyx_k_main_2, sizeof(__pyx_k_main_2), 0, 0, 1, 1},
-    {&__pyx_kp_s_main_pyx, __pyx_k_main_pyx, sizeof(__pyx_k_main_pyx), 0, 0, 1, 0},
     {&__pyx_n_s_n, __pyx_k_n, sizeof(__pyx_k_n), 0, 0, 1, 1},
     {&__pyx_n_s_name, __pyx_k_name, sizeof(__pyx_k_name), 0, 0, 1, 1},
     {&__pyx_n_s_newf, __pyx_k_newf, sizeof(__pyx_k_newf), 0, 0, 1, 1},
@@ -5204,7 +5204,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__2);
   __Pyx_GIVEREF(__pyx_tuple__2);
 
-  /* "main.pyx":7
+  /* "cythonfn.pyx":7
  * cimport numpy as np
  * 
  * def gauss_seidel(np.ndarray[np.float64_t, ndim=2] f, int num_iterations=1000):             # <<<<<<<<<<<<<<
@@ -5214,7 +5214,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__4 = PyTuple_Pack(8, __pyx_n_s_f, __pyx_n_s_num_iterations, __pyx_n_s_n, __pyx_n_s_m, __pyx_n_s_i, __pyx_n_s_j, __pyx_n_s_k, __pyx_n_s_newf); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__4);
   __Pyx_GIVEREF(__pyx_tuple__4);
-  __pyx_codeobj__5 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 8, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__4, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_main_pyx, __pyx_n_s_gauss_seidel, 7, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__5)) __PYX_ERR(0, 7, __pyx_L1_error)
+  __pyx_codeobj__5 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 8, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__4, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_cythonfn_pyx, __pyx_n_s_gauss_seidel, 7, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__5)) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -5363,10 +5363,10 @@ static int __Pyx_modinit_function_import_code(void) {
 #if PY_MAJOR_VERSION >= 3
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 static PyObject* __pyx_pymod_create(PyObject *spec, PyModuleDef *def); /*proto*/
-static int __pyx_pymod_exec_main(PyObject* module); /*proto*/
+static int __pyx_pymod_exec_cythonfn(PyObject* module); /*proto*/
 static PyModuleDef_Slot __pyx_moduledef_slots[] = {
   {Py_mod_create, (void*)__pyx_pymod_create},
-  {Py_mod_exec, (void*)__pyx_pymod_exec_main},
+  {Py_mod_exec, (void*)__pyx_pymod_exec_cythonfn},
   {0, NULL}
 };
 #endif
@@ -5379,7 +5379,7 @@ namespace {
   #endif
   {
       PyModuleDef_HEAD_INIT,
-      "main",
+      "cythonfn",
       0, /* m_doc */
     #if CYTHON_PEP489_MULTI_PHASE_INIT
       0, /* m_size */
@@ -5427,11 +5427,11 @@ namespace {
 
 
 #if PY_MAJOR_VERSION < 3
-__Pyx_PyMODINIT_FUNC initmain(void) CYTHON_SMALL_CODE; /*proto*/
-__Pyx_PyMODINIT_FUNC initmain(void)
+__Pyx_PyMODINIT_FUNC initcythonfn(void) CYTHON_SMALL_CODE; /*proto*/
+__Pyx_PyMODINIT_FUNC initcythonfn(void)
 #else
-__Pyx_PyMODINIT_FUNC PyInit_main(void) CYTHON_SMALL_CODE; /*proto*/
-__Pyx_PyMODINIT_FUNC PyInit_main(void)
+__Pyx_PyMODINIT_FUNC PyInit_cythonfn(void) CYTHON_SMALL_CODE; /*proto*/
+__Pyx_PyMODINIT_FUNC PyInit_cythonfn(void)
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 {
   return PyModuleDef_Init(&__pyx_moduledef);
@@ -5512,7 +5512,7 @@ bad:
 }
 
 
-static CYTHON_SMALL_CODE int __pyx_pymod_exec_main(PyObject *__pyx_pyinit_module)
+static CYTHON_SMALL_CODE int __pyx_pymod_exec_cythonfn(PyObject *__pyx_pyinit_module)
 #endif
 #endif
 {
@@ -5530,7 +5530,7 @@ static CYTHON_SMALL_CODE int __pyx_pymod_exec_main(PyObject *__pyx_pyinit_module
   #if CYTHON_PEP489_MULTI_PHASE_INIT
   if (__pyx_m) {
     if (__pyx_m == __pyx_pyinit_module) return 0;
-    PyErr_SetString(PyExc_RuntimeError, "Module 'main' has already been imported. Re-initialisation is not supported.");
+    PyErr_SetString(PyExc_RuntimeError, "Module 'cythonfn' has already been imported. Re-initialisation is not supported.");
     return -1;
   }
   #elif PY_MAJOR_VERSION >= 3
@@ -5542,13 +5542,13 @@ static CYTHON_SMALL_CODE int __pyx_pymod_exec_main(PyObject *__pyx_pyinit_module
   Py_INCREF(__pyx_m);
   #else
   #if PY_MAJOR_VERSION < 3
-  __pyx_m = Py_InitModule4("main", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
+  __pyx_m = Py_InitModule4("cythonfn", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
   if (unlikely(!__pyx_m)) __PYX_ERR(0, 1, __pyx_L1_error)
   #elif CYTHON_USE_MODULE_STATE
   __pyx_t_1 = PyModule_Create(&__pyx_moduledef); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   {
     int add_module_result = PyState_AddModule(__pyx_t_1, &__pyx_moduledef);
-    __pyx_t_1 = 0; /* transfer ownership from __pyx_t_1 to "main" pseudovariable */
+    __pyx_t_1 = 0; /* transfer ownership from __pyx_t_1 to "cythonfn" pseudovariable */
     if (unlikely((add_module_result < 0))) __PYX_ERR(0, 1, __pyx_L1_error)
     pystate_addmodule_run = 1;
   }
@@ -5572,7 +5572,7 @@ if (!__Pyx_RefNanny) {
       Py_FatalError("failed to import 'refnanny' module");
 }
 #endif
-  __Pyx_RefNannySetupContext("__Pyx_PyMODINIT_FUNC PyInit_main(void)", 0);
+  __Pyx_RefNannySetupContext("__Pyx_PyMODINIT_FUNC PyInit_cythonfn(void)", 0);
   if (__Pyx_check_binary_version(__PYX_LIMITED_VERSION_HEX, __Pyx_get_runtime_version(), CYTHON_COMPILING_IN_LIMITED_API) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #ifdef __Pxy_PyFrame_Initialize_Offsets
   __Pxy_PyFrame_Initialize_Offsets();
@@ -5610,14 +5610,14 @@ if (!__Pyx_RefNanny) {
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main_main) {
+  if (__pyx_module_is_main_cythonfn) {
     if (PyObject_SetAttr(__pyx_m, __pyx_n_s_name, __pyx_n_s_main) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "main")) {
-      if (unlikely((PyDict_SetItemString(modules, "main", __pyx_m) < 0))) __PYX_ERR(0, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "cythonfn")) {
+      if (unlikely((PyDict_SetItemString(modules, "cythonfn", __pyx_m) < 0))) __PYX_ERR(0, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -5638,7 +5638,7 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "main.pyx":4
+  /* "cythonfn.pyx":4
  * #define NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION
  * 
  * import numpy as np             # <<<<<<<<<<<<<<
@@ -5650,7 +5650,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_2) < 0) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "main.pyx":7
+  /* "cythonfn.pyx":7
  * cimport numpy as np
  * 
  * def gauss_seidel(np.ndarray[np.float64_t, ndim=2] f, int num_iterations=1000):             # <<<<<<<<<<<<<<
@@ -5664,14 +5664,14 @@ if (!__Pyx_RefNanny) {
   __Pyx_GIVEREF(__pyx_t_2);
   if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_2)) __PYX_ERR(0, 7, __pyx_L1_error);
   __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_4main_1gauss_seidel, 0, __pyx_n_s_gauss_seidel, NULL, __pyx_n_s_main_2, __pyx_d, ((PyObject *)__pyx_codeobj__5)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 7, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_8cythonfn_1gauss_seidel, 0, __pyx_n_s_gauss_seidel, NULL, __pyx_n_s_cythonfn, __pyx_d, ((PyObject *)__pyx_codeobj__5)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_t_3);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_gauss_seidel, __pyx_t_2) < 0) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "main.pyx":1
+  /* "cythonfn.pyx":1
  * # distutils: define_macros=NPY_NO_DEPRECATED_API=NPY_1_7_API_VERSION             # <<<<<<<<<<<<<<
  * #define NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION
  * 
@@ -5689,7 +5689,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_XDECREF(__pyx_t_3);
   if (__pyx_m) {
     if (__pyx_d && stringtab_initialized) {
-      __Pyx_AddTraceback("init main", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init cythonfn", __pyx_clineno, __pyx_lineno, __pyx_filename);
     }
     #if !CYTHON_USE_MODULE_STATE
     Py_CLEAR(__pyx_m);
@@ -5703,7 +5703,7 @@ if (!__Pyx_RefNanny) {
     }
     #endif
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init main");
+    PyErr_SetString(PyExc_ImportError, "init cythonfn");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();

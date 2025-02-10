@@ -1,7 +1,7 @@
 import numpy as np
 import time
 import matplotlib.pyplot as plt
-@profile 
+# @profile 
 def gauss_seidel(f, num_iterations=1000):
     """
     Perform Gauss-Seidel iterations to solve the 2D Poisson equation.
@@ -64,3 +64,8 @@ plt.ylabel("Execution Time (seconds)")
 plt.title("Gauss-Seidel Solver Performance")
 plt.grid()
 # plt.show()
+
+
+if __name__ == "__main__" :
+    run_performance_test()
+

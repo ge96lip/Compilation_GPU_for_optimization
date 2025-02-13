@@ -49,7 +49,7 @@ def run_performance_test(grid_sizes, num_iterations=1000):
         
 
         start_time = time.time()
-        # f = f.cuda()
+        f = f.cuda()
         gauss_seidel(f, num_iterations)
         elapsed_time = time.time() - start_time
 
